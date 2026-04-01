@@ -264,9 +264,17 @@
             font-size: 13px;
             font-weight: 600;
             color: #1D1D1F;
+            text-decoration: none;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             white-space: nowrap;
             animation: floatBadge 3s ease-in-out infinite;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .ai-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
         }
 
         .ai-badge svg {
@@ -907,14 +915,14 @@
                         </div>
                     </div>
                     <!-- AI-бейджи вокруг фото -->
-                    <div class="ai-badge"><svg viewBox="0 0 24 24" fill="#0071E3"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Сайты</div>
-                    <div class="ai-badge"><svg viewBox="0 0 24 24" fill="#7B61FF"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.5-9.11 0-12.58 3.51-3.47 9.14-3.49 12.65 0L21 3v7.12z"/></svg> Боты</div>
-                    <div class="ai-badge"><svg viewBox="0 0 24 24" fill="#00C6FF"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg> ИИ</div>
-                    <div class="ai-badge"><svg viewBox="0 0 24 24" fill="#0071E3"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"/></svg> Приложения</div>
+                    <a href="#services" class="ai-badge"><svg viewBox="0 0 24 24" fill="#0071E3"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Сайты</a>
+                    <a href="#services" class="ai-badge"><svg viewBox="0 0 24 24" fill="#7B61FF"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.5-9.11 0-12.58 3.51-3.47 9.14-3.49 12.65 0L21 3v7.12z"/></svg> Боты</a>
+                    <a href="#services" class="ai-badge"><svg viewBox="0 0 24 24" fill="#00C6FF"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg> ИИ</a>
+                    <a href="#services" class="ai-badge"><svg viewBox="0 0 24 24" fill="#0071E3"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"/></svg> Приложения</a>
                 </div>
                 <p class="hero-name fade-in">Виктор Коротков</p>
                 <h1 class="fade-in">Создаю сайты, приложения и ботов с помощью ИИ</h1>
-                <p class="hero-subtitle fade-in">Уникальнее, чем на конструкторе. Быстро. Результат за 2-3 дня.</p>
+                <p class="hero-subtitle fade-in">С нуля под ваш бизнес. Результат за 2-3 дня.</p>
                 <div class="fade-in">
                     <a href="https://t.me/VictorKorotkov" class="btn" target="_blank">Обсудить проект</a>
                 </div>
